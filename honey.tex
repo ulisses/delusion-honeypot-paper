@@ -1,0 +1,66 @@
+\documentclass[citeauthoryear]{llncs}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{eurosym}
+
+
+%\title{Assessing Modeling Languages, metrics and tools}
+\title{Modeling Languages: metrics and assessing tools}
+
+%Exemplo para adição dos autores
+\author{Daniela Fonte \and Ismael Vilas Boas \and José Azevedo \and José João Peixoto \and Pedro Faria \and Pedro Silva \and Tiago Sá \and  Ulisses Costa \and Daniela da Cruz \and Pedro Rangel Henriques}
+
+\institute{Department of Informatics, University of Minho\\ Campus de Gualtar, 4710-057 Braga, Portugal\\
+\email{\{danielamoraisfonte, ismael.vb, jazevedo, jj.peixotopereira, pedro.faria.80, zepedro.cs, ulissesmonhecosta, danieladacruz, pedrorangelhenriques\}@gmail.com, tiago@esterisco.com}
+}
+
+\newcommand{\uml}{\textsf{UML}}
+\newcommand{\xmi}{\textsf{XMI}}
+\newcommand{\xml}{\textsf{XML}}
+\newcommand{\entArch }{\textsf{Enterprise Architect}}
+\newcommand{\sdmetrics}{\textsf{SDMetrics}}
+
+\begin{document}
+\maketitle
+
+%%Abstract
+\input{abstract}
+
+\keywords Modeling Languages, Software/Language Quality, Software/Language Metrics, UML
+
+%%Introdução
+\input{sections/intro}
+%%Metrics intro
+\input{sections/metrics}
+%%ck metrics
+\input{sections/ckmetrics}
+%%Diagram class metrics
+\input{sections/dcmetrics}
+%%Use Case metrics
+\input{sections/ucmetrics}
+%%Other
+\input{sections/otherm}
+%%Tools
+\input{sections/tools}
+%%Case Study
+\input{sections/casestudy}
+%SDMetrics
+\input{sections/sdmetrics}
+%Sparkx Systems
+\input{sections/sparkx}
+%%Metrics Assessment
+\input{sections/massess}
+%%Conclusão
+\input{sections/conc}
+\section*{Acknowledgments}
+The authors would like to thank to the SDMetrics staff for provide us an Academic License to explore the full system features presented in this document.
+%%Biblio
+\bibliographystyle{alpha}
+\bibliography{honey}
+
+\end{document} 

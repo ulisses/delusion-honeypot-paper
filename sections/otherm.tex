@@ -1,0 +1,51 @@
+\subsection{Other Diagram Metrics}
+
+Statechart diagrams illustrate the behavior of an object.
+They define different states of an object during its lifetime, which are changed by events.
+A \emph{state} expresses an action of an object during a certain time, when it does not receive external stimulus nor is there any change in its attributes. 
+
+Measures like the \emph{Number of Entry Actions}, \emph{Number of Exit Actions}, \emph{Number of Transitions}, or even the \emph{Number of Activities} are associated to the complexity and dimension of the problem~\cite{EVMmdm}.
+In Table~\ref{t:estado} we can notice some examples from measurable attributes for this type of diagram.
+
+\begin{table}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{ p{1,5cm} | p{4cm}}
+
+\multicolumn{2}{l}{\textbf{Statechart Metrics}} \\ \hline
+\textbf{Metric}  & \textbf{Description} \\ \hline
+TEffects  & Number of transitions with an effect in the state machine. \\ \hline 
+TGuard & Number of transitions with a guard in the state machine. \\ \hline 
+TTrigger & Number of triggers of the state machine transitions. \\ \hline 
+States & Number of states in the state machine. \\ \hline 
+\end{tabular}
+\caption{\small{Statechart Diagrams Example}}
+\label{t:estado}
+%\end{table}
+
+\end{minipage}
+\hspace{0.3cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+
+\begin{tabular}{ p{1,5cm} | p{4cm}}
+\multicolumn{2}{l}{\textbf{Activity Metrics}} \\ \hline
+\textbf{Metric} & \textbf{Description} \\ \hline
+Actions  & Number of activity actions. \\ \hline 
+Object-Nodes & Number of activity object nodes. \\ \hline 
+Pins  & Number of pins on the activity nodes. \\ \hline 
+Guards  & Number of guards defined on object and control flows of the activity. \\ \hline 
+\end{tabular}
+\caption{\small{Example of Activity Diagrams}}
+\label{t:act}
+\vspace{0.25cm}
+\end{minipage}
+\end{table}
+
+Activity diagrams describe work flows and are very useful for detail operations of a class (including behaviors expressed by parallel processing).
+As we can see in Table~\ref{t:act} several metrics for this diagrams are available.
+
+Besides these metrics, it is possible to measure attributes like the \emph{Number of Activity Groups/Zones}, the \emph{Number of object flows} or even the \emph{Number of Exceptions} of each diagram.
+
+After this methodological research through which we introduce the more consistent and relevant metrics found in this area, we present in the next section tools for apply them to \uml\ models and put them to test with a real case-study.
+
